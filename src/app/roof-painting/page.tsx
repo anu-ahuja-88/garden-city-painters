@@ -55,7 +55,7 @@ export default function RoofPaintingPage() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1632759162353-066e4a2e584a?auto=format&fit=crop&w=1200&q=80"
+                    src="/gallery/roof-painting-restoration-christchurch.png"
                     alt="Professional Roof Painting Christchurch"
                     className="w-full h-full object-cover"
                   />

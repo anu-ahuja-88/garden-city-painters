@@ -23,7 +23,7 @@ export default function HeroSection() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/gallery/modern-residential-painting-christchurch.png')`,
+            backgroundImage: `url('/gallery/large-residential-painting-canterbury.png')`,
           }}
           role="img"
           aria-label="Freshly painted modern Christchurch home exterior by Garden City Painters"
