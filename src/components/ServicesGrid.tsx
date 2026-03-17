@@ -7,43 +7,43 @@ const services = [
     icon: Paintbrush,
     title: "Interior Painting",
     description: "Colour changes, feature walls, or full house repaints — we handle it all with minimal mess and maximum care.",
-    photo: "Clean interior painting of a modern Christchurch home",
+    photo: "/gallery/interior-painting-modern-kitchen-christchurch.png",
   },
   {
     icon: CloudSun,
     title: "Exterior Painting",
     description: "Protection against the Christchurch elements. We use premium coatings and thorough prep for a lasting finish.",
-    photo: "Expertly painted Christchurch home exterior with durable coating",
+    photo: "/gallery/modern-residential-painting-christchurch.png",
   },
   {
     icon: Droplets,
     title: "Roof Painting",
     description: "Specialist roof restoration and painting to protect and beautify your property's first line of defence.",
-    photo: "Freshly coated roof in Christchurch, high-gloss finish",
+    photo: "/gallery/large-residential-painting-canterbury.png",
   },
   {
     icon: Layers,
     title: "Interior Plastering",
     description: "Seamless surface repairs and high-quality plastering to ensure a perfect foundation for your new paint.",
-    photo: "Smooth plaster finish on a newly repaired wall",
+    photo: "/gallery/interior-house-painting-in-progress.png",
   },
   {
     icon: Home,
     title: "Residential Painting",
     description: "Personalised service for homeowners. We treat your house with respect, delivering trade-qualified excellence.",
-    photo: "Modern residential property painting project in Canterbury",
+    photo: "/gallery/residential-exterior-painting-completed-christchurch.png",
   },
   {
     icon: Building2,
     title: "Commercial Painting",
     description: "Efficient solutions for businesses. Tight deadlines and high standards for offices, retail, and more.",
-    photo: "High-end commercial interior painting project",
+    photo: "/gallery/commercial-painting-project-scaffolding-christchurch.png",
   },
   {
     icon: Hammer,
     title: "Surface Preparation & Repairs",
     description: "We don't just paint over problems. We fix them first, ensuring your new finish lasts for years to come.",
-    photo: "Properly prepared wall surface ready for painting",
+    photo: "/gallery/exterior-preparation-painting-christchurch.png",
   },
 ]
 
@@ -76,9 +76,13 @@ export default function ServicesGrid() {
               transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
               className="group bg-white border border-charcoal/10 rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
             >
-              {/* Photo placeholder */}
-              <div className="bg-grey aspect-[4/3] flex items-center justify-center px-4">
-                <p className="text-charcoal/30 text-xs text-center italic">[PHOTO: {s.photo}]</p>
+              {/* Photo */}
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img 
+                  src={s.photo} 
+                  alt={s.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               {/* Content */}
               <div className="p-6">

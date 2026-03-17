@@ -8,21 +8,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 pb-12 border-b border-white/10">
           {/* Brand */}
           <div className="space-y-6">
-            <a href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded bg-red flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-sm">GC</span>
-              </div>
-              <span className="font-heading font-bold text-white text-lg leading-tight uppercase tracking-tight">
-                Garden City<br />
-                <span className="text-red text-xs font-semibold tracking-[0.2em] uppercase">Painters</span>
-              </span>
+            <a href="/" className="flex items-center gap-2 mb-6">
+              <img 
+                src="/logo.png" 
+                alt="Garden City Painters Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </a>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs font-body">
               Over 15 years of excellence in painting and plastering across the Canterbury region. Trade qualified and Master Painters member.
             </p>
             <div className="flex items-center gap-4">
               <a 
-                href="https://facebook.com/Garden-City-Painters" 
+                href="https://www.facebook.com/p/Garden-City-Painters-100063622866685/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white/60 hover:bg-red hover:text-white transition-all cursor-pointer"

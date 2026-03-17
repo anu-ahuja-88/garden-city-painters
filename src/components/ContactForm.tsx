@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import { Phone, Mail, MapPin, CheckCircle } from "lucide-react"
+import { Phone, Mail, MapPin, CheckCircle, Facebook } from "lucide-react"
 import AnimateIn from "./AnimateIn"
 
 const workTypes = [
@@ -64,7 +64,7 @@ export default function ContactForm() {
                       type="tel"
                       required
                       className="w-full border border-charcoal/20 rounded-lg px-4 py-3 text-sm font-body text-charcoal focus:outline-none focus:ring-2 focus:ring-red focus:border-transparent transition-all"
-                      placeholder="02X XXX XXXX"
+                      placeholder="022 XXX XXXX"
                     />
                   </div>
                 </div>
@@ -122,6 +122,7 @@ export default function ContactForm() {
                 { icon: Phone, label: "Call Us", value: "022 351 5421", href: "tel:0223515421" },
                 { icon: Mail, label: "Email", value: "info@gardencitypainters.co.nz", href: "mailto:info@gardencitypainters.co.nz" },
                 { icon: MapPin, label: "Based in", value: "Christchurch, Canterbury", href: null },
+                { icon: Facebook, label: "Follow Us", value: "Garden City Painters", href: "https://www.facebook.com/p/Garden-City-Painters-100063622866685/" },
               ].map((c, i) => (
                 <div key={i} className="bg-grey rounded-xl p-5 flex items-center gap-4 border border-charcoal/5">
                   <div className="w-10 h-10 rounded-lg bg-red/10 flex items-center justify-center flex-shrink-0">

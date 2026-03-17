@@ -9,7 +9,7 @@ export const gcp = {
   yearsInBusiness: "15+",
   jobsCompleted: "2,400+",
   googleRating: "5.0★",
-  facebook: "https://www.facebook.com/Garden-City-Painters",
+  facebook: "https://www.facebook.com/p/Garden-City-Painters-100063622866685/",
   seo: {
     title: "Painters & Plasterers Christchurch | Garden City Painters",
     description: "Garden City Painters — Trade qualified Master Painters delivering high-quality residential and commercial painting and plastering across Christchurch & Canterbury.",

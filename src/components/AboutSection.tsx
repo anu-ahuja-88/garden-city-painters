@@ -55,9 +55,9 @@ export default function AboutSection() {
           <AnimateIn delay={0.2}>
             <div className="bg-white/5 rounded-2xl aspect-[4/3] flex items-center justify-center border border-white/10 overflow-hidden relative">
                <img 
-                src="https://images.unsplash.com/photo-1595844730298-b960ff98fee0?auto=format&fit=crop&w=1200&q=80" 
-                alt="Garden City Painters professional team"
-                className="w-full h-full object-cover opacity-50 transition-opacity duration-500 hover:opacity-70"
+                src="/christchurch-painters-vans.png" 
+                alt="Garden City Painters professional team and vans"
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-charcoal/80 to-transparent p-6">
                  <p className="text-white text-sm font-heading font-bold uppercase tracking-widest">Master Painters NZ Member</p>

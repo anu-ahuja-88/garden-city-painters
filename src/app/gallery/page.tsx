@@ -8,12 +8,60 @@ export const metadata = {
 }
 
 const images = [
-  { id: 1, title: "Modern Residential Exterior", type: "Residential", src: "https://images.unsplash.com/photo-1518605336397-90db35f549a1?auto=format&fit=crop&w=800&q=80" },
-  { id: 2, title: "Contemporary Interior", type: "Interior", src: "https://images.unsplash.com/photo-1589939705384-5185138a04b9?auto=format&fit=crop&w=800&q=80" },
-  { id: 3, title: "Roof Restoration", type: "Roof", src: "https://images.unsplash.com/photo-1632759162353-066e4a2e584a?auto=format&fit=crop&w=800&q=80" },
-  { id: 4, title: "Commercial Office Painting", type: "Commercial", src: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" },
-  { id: 5, title: "Kitchen Cabinet Refinishing", type: "Interior", src: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" },
-  { id: 6, title: "Character Home Restoration", type: "Residential", src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" },
+  { 
+    id: 1, 
+    title: "Modern Residential Exterior", 
+    type: "Residential", 
+    src: "/gallery/modern-residential-painting-christchurch.png" 
+  },
+  { 
+    id: 2, 
+    title: "Professional Interior Finish", 
+    type: "Interior", 
+    src: "/gallery/interior-painting-modern-kitchen-christchurch.png" 
+  },
+  { 
+    id: 3, 
+    title: "Commercial Site Scaffolding", 
+    type: "Commercial", 
+    src: "/gallery/commercial-painting-project-scaffolding-christchurch.png" 
+  },
+  { 
+    id: 4, 
+    title: "Completed Christchurch Home", 
+    type: "Residential", 
+    src: "/gallery/residential-exterior-painting-completed-christchurch.png" 
+  },
+  { 
+    id: 5, 
+    title: "Large Canterbury Estate", 
+    type: "Residential", 
+    src: "/gallery/large-residential-painting-canterbury.png" 
+  },
+  { 
+    id: 6, 
+    title: "Interior Work In Progress", 
+    type: "Interior", 
+    src: "/gallery/interior-house-painting-in-progress.png" 
+  },
+  { 
+    id: 7, 
+    title: "Public Building Detailing", 
+    type: "Commercial", 
+    src: "/gallery/roof-painting-restoration-christchurch.png" 
+  },
+  { 
+    id: 8, 
+    title: "Exterior Preparation", 
+    type: "Residential", 
+    src: "/gallery/exterior-preparation-painting-christchurch.png" 
+  },
+  { 
+    id: 9, 
+    title: "Winter Service Readiness", 
+    type: "Van", 
+    src: "/gallery/garden-city-painters-van-snow.png" 
+  },
 ]
 
 export default function GalleryPage() {
@@ -23,8 +71,8 @@ export default function GalleryPage() {
       <main className="pt-20">
         <section className="bg-charcoal py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-4">Our Work</h1>
-            <p className="text-white/60 text-lg max-w-2xl mx-auto">
+            <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-4 uppercase tracking-tight">Our <span className="text-red">Work</span></h1>
+            <p className="text-white/60 text-lg max-w-2xl mx-auto font-body">
               A showcase of our recent painting and plastering projects across the Canterbury region.
             </p>
           </div>
@@ -34,16 +82,16 @@ export default function GalleryPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {images.map((img) => (
-                <div key={img.id} className="group relative overflow-hidden rounded-xl bg-grey aspect-[4/3]">
+                <div key={img.id} className="group relative overflow-hidden rounded-xl bg-grey aspect-[4/3] border border-charcoal/5 shadow-sm">
                   <img
                     src={img.src}
                     alt={img.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <div className="absolute inset-0 bg-charcoal/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                       <span className="text-red text-xs font-bold uppercase tracking-widest">{img.type}</span>
-                      <h3 className="text-white font-heading font-bold text-lg">{img.title}</h3>
+                      <h3 className="text-white font-heading font-bold text-lg leading-tight">{img.title}</h3>
                     </div>
                   </div>
                 </div>

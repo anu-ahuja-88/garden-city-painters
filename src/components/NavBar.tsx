@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Phone } from "lucide-react"
+import { usePathname } from "next/navigation"
 
 const links = [
   { label: "Home", href: "/" },
@@ -16,6 +17,7 @@ const links = [
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60)
@@ -23,23 +25,24 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handler)
   }, [])
 
+  const isHome = pathname === "/"
+  const hasBackground = scrolled || !isHome
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-charcoal/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
+        hasBackground ? "bg-charcoal/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 cursor-pointer">
-            <div className="w-8 h-8 rounded bg-red flex items-center justify-center">
-              <span className="text-white font-heading font-bold text-sm">GC</span>
-            </div>
-            <span className="font-heading font-bold text-white text-lg leading-tight uppercase tracking-tight">
-              Garden City<br />
-              <span className="text-red text-xs font-semibold tracking-[0.2em] uppercase">Painters</span>
-            </span>
+            <img 
+              src="/logo.png" 
+              alt="Garden City Painters Logo" 
+              className="h-12 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop nav */}
