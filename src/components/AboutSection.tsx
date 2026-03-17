@@ -1,0 +1,71 @@
+import { CheckCircle } from "lucide-react"
+import AnimateIn from "./AnimateIn"
+
+const credentials = [
+  "Members of Master Painters New Zealand",
+  "Over 15 years industry experience",
+  "Team of trade qualified painters",
+  "Full public liability insurance",
+  "Quality workmanship guaranteed",
+]
+
+export default function AboutSection() {
+  return (
+    <section id="about" className="bg-charcoal py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Text */}
+          <div>
+            <AnimateIn>
+              <h2 className="font-heading font-bold text-4xl text-white mb-6 leading-tight uppercase tracking-tight">
+                Christchurch <span className="text-red">Painters</span> You Can Count On
+              </h2>
+            </AnimateIn>
+            <AnimateIn delay={0.1}>
+              <p className="text-white/70 font-body text-lg leading-relaxed mb-6">
+                Garden City Painters has been delivering high-end painting and plastering across Christchurch and Canterbury for over 15 years. We pride ourselves on being a team of trade-qualified professionals who focus strongly on attention to detail.
+              </p>
+            </AnimateIn>
+            <AnimateIn delay={0.2}>
+              <p className="text-white/70 font-body text-lg leading-relaxed mb-8">
+                Every job we take on, whether it's a residential home or a large commercial facility, receives the same top-quality workmanship. Our membership with Master Painters New Zealand is your assurance of quality and professional standards.
+              </p>
+            </AnimateIn>
+            <AnimateIn delay={0.3}>
+              <ul className="space-y-3 mb-10">
+                {credentials.map((c, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white/80 text-sm font-body">
+                    <CheckCircle className="w-5 h-5 text-red flex-shrink-0 mt-0.5" />
+                    {c}
+                  </li>
+                ))}
+              </ul>
+            </AnimateIn>
+            <AnimateIn delay={0.4}>
+              <a
+                href="/contact"
+                className="inline-block bg-red hover:bg-red-hover text-white px-8 py-4 rounded font-semibold text-sm transition-colors duration-200 cursor-pointer shadow-lg"
+              >
+                Get in Touch
+              </a>
+            </AnimateIn>
+          </div>
+
+          {/* Photo */}
+          <AnimateIn delay={0.2}>
+            <div className="bg-white/5 rounded-2xl aspect-[4/3] flex items-center justify-center border border-white/10 overflow-hidden relative">
+               <img 
+                src="https://images.unsplash.com/photo-1595844730298-b960ff98fee0?auto=format&fit=crop&w=1200&q=80" 
+                alt="Garden City Painters professional team"
+                className="w-full h-full object-cover opacity-50 transition-opacity duration-500 hover:opacity-70"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-charcoal/80 to-transparent p-6">
+                 <p className="text-white text-sm font-heading font-bold uppercase tracking-widest">Master Painters NZ Member</p>
+              </div>
+            </div>
+          </AnimateIn>
+        </div>
+      </div>
+    </section>
+  )
+}
