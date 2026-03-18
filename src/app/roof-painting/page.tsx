@@ -4,8 +4,8 @@ import CtaBanner from "@/components/CtaBanner"
 import { CheckCircle2 } from "lucide-react"
 
 export const metadata = {
-  title: "Professional Roof Painting Christchurch | Garden City Painters",
-  description: "Specialist roof painting and restoration services in Christchurch. Protect and beautify your home with Garden City Painters.",
+  title: "Roof Painting & Restoration Christchurch | Garden City Painters",
+  description: "Specialist roof painting and restoration services in Christchurch. Protect your home from the elements with our professional roof coating systems.",
 }
 
 const benefits = [
@@ -29,13 +29,13 @@ export default function RoofPaintingPage() {
                 <span className="inline-block bg-red text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded mb-6">
                   Specialist Service
                 </span>
-                <h1 className="text-4xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight">
+                <h1 className="text-4xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight uppercase tracking-tight">
                   Expert <span className="text-red">Roof</span> <br /> Painting
                 </h1>
-                <p className="text-white/70 text-lg mb-8 leading-relaxed">
-                  Your roof is your home&apos;s first line of defense. Our specialized roof painting 
-                  services not only enhance the look of your property but provide long-lasting 
-                  protection against Christchurch&apos;s harsh weather conditions.
+                <p className="text-white/70 text-lg mb-8 leading-relaxed font-body">
+                  Your roof is your home&apos;s first line of defence. Our specialized roof painting 
+                  services don&apos;t just look good—they provide years of protection against 
+                  the Christchurch elements. From rust treatment to high-end protective coatings, we&apos;ve got your roof sorted.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                   {benefits.map((b) => (
@@ -71,9 +71,9 @@ export default function RoofPaintingPage() {
 
         <section className="py-20 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-heading font-bold text-charcoal mb-6">Our Process</h2>
-            <p className="text-charcoal/60 text-lg mb-12">
-              We follow a rigorous multi-step process to ensure a flawless and durable finish on every roof project.
+            <h2 className="text-3xl font-heading font-bold text-charcoal mb-6 uppercase tracking-tight">Our <span className="text-red">Process</span></h2>
+            <p className="text-charcoal/60 text-lg mb-12 font-body">
+              We follow a strict multi-step system to ensure your roof get the premium protection it deserves.
             </p>
             <div className="space-y-12 text-left">
               <div className="flex gap-6">

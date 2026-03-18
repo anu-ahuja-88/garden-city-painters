@@ -5,32 +5,32 @@ const reasons = [
   {
     icon: GraduationCap,
     title: "15+ Years Experience",
-    body: "Over 15 years in the painting industry, bringing a wealth of knowledge to every project we undertake.",
+    body: "We've been in the game for over 15 years, bringing a massive amount of local knowledge to every project.",
   },
   {
     icon: ShieldCheck,
     title: "Trade Qualified Team",
-    body: "Our painters are trade qualified professionals who take pride in their craft and professional standards.",
+    body: "Our painters are trade-qualified pros who actually take pride in their craft and professional standards.",
   },
   {
     icon: Award,
     title: "Master Painters NZ",
-    body: "Proud members of Master Painters New Zealand, ensuring our work meets rigorous national quality benchmarks.",
+    body: "Proud members of Master Painters NZ, so you know our work meets the highest national quality benchmarks.",
   },
   {
     icon: Microscope,
     title: "Attention to Detail",
-    body: "We focus strongly on the fine details and top-quality workmanship that set a premium finish apart.",
+    body: "We focus on the fine details that make a huge difference, ensuring a premium finish every single time.",
   },
   {
     icon: ThumbsUp,
     title: "Quality Guaranteed",
-    body: "We stand behind our work. Quality work is guaranteed on every residential and commercial project.",
+    body: "We stand 100% behind our work. Quality workmanship is guaranteed on every job we take on.",
   },
   {
     icon: CheckCircle,
     title: "Christchurch Locals",
-    body: "Proudly serving the wider Canterbury region with local knowledge and reliable service.",
+    body: "Proudly serving the wider Canterbury region with local knowledge and reliable service you can count on.",
   },
 ]
 

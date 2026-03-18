@@ -5,8 +5,8 @@ import CtaBanner from "@/components/CtaBanner"
 import { Star } from "lucide-react"
 
 export const metadata = {
-  title: "Testimonials | Garden City Painters",
-  description: "Read what our clients in Christchurch and Canterbury have to say about our professional painting services.",
+  title: "Client Reviews & Testimonials | Garden City Painters Christchurch",
+  description: "See what homeowners and businesses across Christchurch think of Garden City Painters. Professional, reliable, and top-quality painting services.",
 }
 
 export default function TestimonialsPage() {
@@ -16,9 +16,9 @@ export default function TestimonialsPage() {
       <main className="pt-20">
         <section className="bg-charcoal py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-4">Client Testimonials</h1>
-            <p className="text-white/60 text-lg max-w-2xl mx-auto mb-8">
-              We pride ourselves on delivery quality work and exceptional service. Here is what our clients have to say.
+            <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-4 uppercase tracking-tight">Client <span className="text-red">Reviews</span></h1>
+            <p className="text-white/60 text-lg max-w-2xl mx-auto mb-8 font-body">
+              We take pride in every finish. Here is what our Christchurch and Canterbury clients have to say about our work.
             </p>
             <div className="flex items-center justify-center gap-2">
               <div className="flex">

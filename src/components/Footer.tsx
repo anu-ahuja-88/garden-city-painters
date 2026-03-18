@@ -16,7 +16,7 @@ export default function Footer() {
               />
             </a>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs font-body">
-              Over 15 years of excellence in painting and plastering across the Canterbury region. Trade qualified and Master Painters member.
+              For more than 15 years, we&apos;ve been the local choice for top-quality painting and plastering across the Christchurch region. Trade qualified professionals who care.
             </p>
             <div className="flex items-center gap-4">
               <a 

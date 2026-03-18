@@ -23,12 +23,12 @@ export default function AboutSection() {
             </AnimateIn>
             <AnimateIn delay={0.1}>
               <p className="text-white/70 font-body text-lg leading-relaxed mb-6">
-                Garden City Painters has been delivering high-end painting and plastering across Christchurch and Canterbury for over 15 years. We pride ourselves on being a team of trade-qualified professionals who focus strongly on attention to detail.
+                Garden City Painters has been part of the Christchurch community for over 15 years. We&apos;re a local team of trade-qualified pros who actually care about the finish. Whether it&apos;s a quick refresh or a full architectural makeover, we&apos;ve got you covered across the whole Canterbury region.
               </p>
             </AnimateIn>
             <AnimateIn delay={0.2}>
               <p className="text-white/70 font-body text-lg leading-relaxed mb-8">
-                Every job we take on, whether it's a residential home or a large commercial facility, receives the same top-quality workmanship. Our membership with Master Painters New Zealand is your assurance of quality and professional standards.
+                We believe in doing a job properly the first time. As proud members of Master Painters New Zealand, we stick to the highest standards, ensuring your home or business looks top-notch for years to come. No shortcuts, just quality workmanship.
               </p>
             </AnimateIn>
             <AnimateIn delay={0.3}>

@@ -43,7 +43,7 @@ const testimonials = [
     name: "Barbara Galbraith",
     location: "Local Guide",
     rating: 5,
-    text: "Found Garden City Painters great to work with - kept me in the loop and checked with me if all was going as planned. Very organised and no trouble to do extra when asked. Extremely prompt and professional.",
+    text: "Found Garden City Painters great to work with. They kept me in the loop and checked with me if all was going as planned. Very organised and no trouble to do extra when asked. Extremely prompt and professional.",
   },
   {
     name: "Diane Norman",

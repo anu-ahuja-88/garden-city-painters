@@ -43,14 +43,14 @@ export default function HeroSection() {
           {...fadeUp(0.15)}
           className="text-4xl sm:text-5xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6"
         >
-          High-End Painting &amp; Plastering<br className="hidden sm:block" /> in Christchurch
+          Expert Painters &amp; Plasterers<br className="hidden sm:block" /> in Christchurch
         </motion.h1>
 
         <motion.p
           {...fadeUp(0.3)}
           className="text-lg sm:text-xl text-white/80 font-body max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Trade qualified experts delivering flawless finishes for homes and businesses across Canterbury — Over 15 years experience.
+          Trade qualified experts delivering top-notch finishes for homes and businesses across Canterbury. Over 15 years of local experience you can trust.
         </motion.p>
 
         <motion.div

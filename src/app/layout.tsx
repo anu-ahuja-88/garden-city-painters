@@ -2,15 +2,15 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Painters & Plasterers Christchurch | Garden City Painters",
+  title: "Professional Painters & Plasterers Christchurch | Garden City Painters",
   description:
-    "Garden City Painters — Trade qualified Master Painters delivering high-quality residential and commercial painting across Christchurch & Canterbury. Over 15 years experience.",
+    "Looking for top-notch painters in Christchurch? Garden City Painters offer trade-qualified expertise in residential & commercial painting and plastering. Grab a free quote from your local Christchurch experts today.",
   keywords:
     "painters Christchurch, painting contractors Christchurch, commercial painters Christchurch, residential painters Canterbury, plasterers Christchurch, Master Painters Christchurch, roof painting Christchurch",
   openGraph: {
-    title: "Painters & Plasterers Christchurch | Garden City Painters",
+    title: "Professional Painters & Plasterers Christchurch | Garden City Painters",
     description:
-      "Trade qualified Master Painters delivering high-quality residential and commercial painting across Christchurch & Canterbury.",
+      "Looking for top-notch painters in Christchurch? We deliver high-quality residential and commercial painting across Canterbury. Get a free quote today.",
     type: "website",
     locale: "en_NZ",
   },
@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 { "@type": "AdministrativeArea", name: "Canterbury" },
               ],
               description:
-                "Trade qualified Master Painters delivering high-quality residential and commercial painting and plastering across Christchurch & Canterbury for over 15 years.",
+                "Garden City Painters are your local Christchurch experts for high-end residential and commercial painting and plastering. Trade qualified Master Painters with over 15 years of experience serving the Canterbury region.",
               priceRange: "$$",
             }),
           }}

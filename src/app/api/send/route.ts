@@ -7,11 +7,12 @@ export async function POST(req: Request) {
   try {
     const { name, email, phone, workType, description } = await req.json();
 
+    console.log('Sending email with Resend...', { name, email, phone, workType });
     const { data, error } = await resend.emails.send({
       from: 'Garden City Painters <enquiry@gardencitypainters.nz>',
       to: ['anuahuja502@gmail.com'], // Updated to personal email for testing
       subject: `New Enquiry from ${name}`,
-      reply_to: email,
+      replyTo: email,
       html: `
         <h2>New Website Enquiry</h2>
         <p><strong>Name:</strong> ${name}</p>
@@ -24,6 +25,9 @@ export async function POST(req: Request) {
         <p>This email was sent from the Garden City Painters website contact form.</p>
       `,
     });
+
+    console.log('Resend data:', data);
+    console.log('Resend error:', error);
 
     if (error) {
       return NextResponse.json({ error }, { status: 400 });

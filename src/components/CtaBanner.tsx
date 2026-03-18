@@ -13,7 +13,7 @@ export default function CtaBanner() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="font-heading font-bold text-3xl sm:text-4xl mb-4 uppercase tracking-tight"
         >
-          Ready for a Finish You&apos;ll Be Proud Of?
+          Ready for a Finish You&apos;ll Love?
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: reduce ? 0 : 24 }}
@@ -22,7 +22,7 @@ export default function CtaBanner() {
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           className="text-white/80 text-lg font-body mb-8"
         >
-          Get a free, no-obligation quote from Christchurch&apos;s trade-qualified painters today.
+          Get a free, no-obligation quote from our team of Christchurch pros today.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: reduce ? 0 : 24 }}

@@ -57,9 +57,9 @@ export default function ContactForm() {
     <section id="contact" className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateIn>
-          <div className="max-w-2xl mb-12">
-            <h2 className="font-heading font-bold text-4xl text-charcoal mb-3 uppercase tracking-tight">Get a <span className="text-red">Free Quote</span></h2>
-            <p className="text-charcoal/60 font-body text-lg">We&apos;ll get back to you within 1 business day.</p>
+          <div className="max-w-2xl mb-12 text-center md:text-left">
+            <h2 className="font-heading font-bold text-4xl text-charcoal mb-3 uppercase tracking-tight">Need a <span className="text-red">Quote?</span></h2>
+            <p className="text-charcoal/60 font-body text-lg">Send us a message and we&apos;ll get back to you within 24 hours. No stress, no obligation.</p>
           </div>
         </AnimateIn>
 
