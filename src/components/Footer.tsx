@@ -74,7 +74,7 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] uppercase tracking-widest text-white/30 font-body">
           <p>© {year} Garden City Painters. All rights reserved.</p>
-          <p>Website by <span className="text-red">Verra Web Studio</span></p>
+          <p>Website by <a href="https://verrawebstudio.co.nz" target="_blank" rel="noopener noreferrer" className="text-red hover:underline transition-all">Verra Web Studio</a></p>
         </div>
       </div>
     </footer>
