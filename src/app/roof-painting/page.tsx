@@ -73,7 +73,7 @@ export default function RoofPaintingPage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-heading font-bold text-charcoal mb-6 uppercase tracking-tight">Our <span className="text-red">Process</span></h2>
             <p className="text-charcoal/60 text-lg mb-12 font-body">
-              We follow a strict multi-step system to ensure your roof get the premium protection it deserves.
+              We follow a strict multi-step system to ensure your roof gets the premium protection it deserves.
             </p>
             <div className="space-y-12 text-left">
               <div className="flex gap-6">
