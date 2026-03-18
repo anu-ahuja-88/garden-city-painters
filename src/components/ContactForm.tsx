@@ -15,10 +15,42 @@ const workTypes = [
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError(null)
+
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      workType: formData.get('workType'),
+      description: formData.get('description'),
+    }
+
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+      } else {
+        throw new Error('Failed to send')
+      }
+    } catch (err) {
+      setError("Sorry, there was an error sending your message. Please try again or call us.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -49,6 +81,7 @@ export default function ContactForm() {
                     </label>
                     <input
                       id="name"
+                      name="name"
                       type="text"
                       required
                       className="w-full border border-charcoal/20 rounded-lg px-4 py-3 text-sm font-body text-charcoal focus:outline-none focus:ring-2 focus:ring-red focus:border-transparent transition-all"
@@ -61,6 +94,7 @@ export default function ContactForm() {
                     </label>
                     <input
                       id="phone"
+                      name="phone"
                       type="tel"
                       required
                       className="w-full border border-charcoal/20 rounded-lg px-4 py-3 text-sm font-body text-charcoal focus:outline-none focus:ring-2 focus:ring-red focus:border-transparent transition-all"
@@ -74,6 +108,7 @@ export default function ContactForm() {
                   </label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
                     required
                     className="w-full border border-charcoal/20 rounded-lg px-4 py-3 text-sm font-body text-charcoal focus:outline-none focus:ring-2 focus:ring-red focus:border-transparent transition-all"
@@ -86,6 +121,7 @@ export default function ContactForm() {
                   </label>
                   <select
                     id="work-type"
+                    name="workType"
                     className="w-full border border-charcoal/20 rounded-lg px-4 py-3 text-sm font-body text-charcoal focus:outline-none focus:ring-2 focus:ring-red focus:border-transparent transition-all bg-white cursor-pointer"
                   >
                     <option value="">Select service...</option>
@@ -100,6 +136,7 @@ export default function ContactForm() {
                   </label>
                   <textarea
                     id="description"
+                    name="description"
                     rows={4}
                     className="w-full border border-charcoal/20 rounded-lg px-4 py-3 text-sm font-body text-charcoal focus:outline-none focus:ring-2 focus:ring-red focus:border-transparent transition-all resize-none"
                     placeholder="Tell us a bit about the job — size, location, timeline..."
@@ -107,10 +144,14 @@ export default function ContactForm() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-red hover:bg-red-hover text-white py-4 rounded-lg font-heading font-semibold text-sm transition-colors duration-200 cursor-pointer shadow-lg"
+                  disabled={loading}
+                  className="w-full bg-red hover:bg-red-hover disabled:bg-charcoal/50 text-white py-4 rounded-lg font-heading font-semibold text-sm transition-colors duration-200 cursor-pointer shadow-lg"
                 >
-                  Send My Enquiry
+                  {loading ? 'Sending...' : 'Send My Enquiry'}
                 </button>
+                {error && (
+                  <p className="text-red text-center text-xs mt-4 font-body font-semibold">{error}</p>
+                )}
               </form>
             )}
           </AnimateIn>
