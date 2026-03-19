@@ -3,43 +3,43 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://gardencitypainters.nz',
+      url: 'https://www.gardencitypainters.nz',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://gardencitypainters.nz/about',
+      url: 'https://www.gardencitypainters.nz/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://gardencitypainters.nz/services',
+      url: 'https://www.gardencitypainters.nz/services',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://gardencitypainters.nz/roof-painting',
+      url: 'https://www.gardencitypainters.nz/roof-painting',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: 'https://gardencitypainters.nz/gallery',
+      url: 'https://www.gardencitypainters.nz/gallery',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.6,
     },
     {
-      url: 'https://gardencitypainters.nz/testimonials',
+      url: 'https://www.gardencitypainters.nz/testimonials',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
-      url: 'https://gardencitypainters.nz/contact',
+      url: 'https://www.gardencitypainters.nz/contact',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.7,
