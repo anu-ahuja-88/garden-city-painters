@@ -44,10 +44,12 @@ export default function ContactForm() {
       if (response.ok) {
         setSubmitted(true)
       } else {
-        throw new Error('Failed to send')
+        const errorData = await response.json()
+        throw new Error(errorData.error?.message || errorData.error || 'Failed to send')
       }
-    } catch (err) {
-      setError("Sorry, there was an error sending your message. Please try again or call us.")
+    } catch (err: any) {
+      console.error('Submission error:', err)
+      setError(err.message || "Sorry, there was an error sending your message. Please try again or call us.")
     } finally {
       setLoading(false)
     }
