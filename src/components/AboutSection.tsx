@@ -51,16 +51,31 @@ export default function AboutSection() {
             </AnimateIn>
           </div>
 
-          {/* Photo */}
+          {/* Photos */}
           <AnimateIn delay={0.2}>
-            <div className="bg-white/5 rounded-2xl aspect-[4/3] flex items-center justify-center border border-white/10 overflow-hidden relative">
-               <img 
-                src="/christchurch-painters-vans.png" 
-                alt="Garden City Painters professional team and vans"
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-              />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-charcoal/80 to-transparent p-6">
-                 <p className="text-white text-sm font-heading font-bold uppercase tracking-widest">Master Painters NZ Member</p>
+            <div className="relative">
+              {/* Main — branded van on residential job site */}
+              <div className="bg-white/5 rounded-2xl aspect-[4/3] overflow-hidden border border-white/10 relative">
+                <img
+                  src="/gallery/garden-city-painters-van-residential-site-christchurch.png"
+                  alt="Garden City Painters branded van on residential job site Christchurch"
+                  width={800}
+                  height={600}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-charcoal/80 to-transparent p-6">
+                  <p className="text-white text-sm font-heading font-bold uppercase tracking-widest">Master Painters NZ Member</p>
+                </div>
+              </div>
+              {/* Inset — van in snow brand shot */}
+              <div className="absolute -bottom-4 -right-4 w-40 h-28 rounded-xl overflow-hidden shadow-xl border-2 border-white/10 hidden md:block">
+                <img
+                  src="/gallery/garden-city-painters-van-snow-branded-christchurch.png"
+                  alt="Garden City Painters branded van in winter Christchurch Canterbury"
+                  width={320}
+                  height={224}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </AnimateIn>

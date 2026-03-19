@@ -53,10 +53,23 @@ export default function RoofPaintingPage() {
                 </a>
               </div>
               <div className="relative">
+                {/* Main aerial shot */}
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="/gallery/roof-painting-restoration-christchurch.png"
-                    alt="Professional Roof Painting Christchurch"
+                    src="/gallery/roof-painting-corrugated-iron-aerial-christchurch.jpg"
+                    alt="Aerial view of corrugated iron roof painting completed by Garden City Painters Christchurch"
+                    width={800}
+                    height={600}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Worker inset */}
+                <div className="absolute -bottom-4 -right-4 w-44 h-32 rounded-xl overflow-hidden shadow-xl border-2 border-white hidden md:block">
+                  <img
+                    src="/gallery/roof-painting-worker-corrugated-iron-christchurch.png"
+                    alt="Garden City Painters roofer applying coating to corrugated iron Christchurch"
+                    width={352}
+                    height={256}
                     className="w-full h-full object-cover"
                   />
                 </div>
