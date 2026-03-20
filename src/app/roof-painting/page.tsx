@@ -1,3 +1,4 @@
+import Image from "next/image"
 import NavBar from "@/components/NavBar"
 import Footer from "@/components/Footer"
 import CtaBanner from "@/components/CtaBanner"
@@ -54,24 +55,28 @@ export default function RoofPaintingPage() {
               </div>
               <div className="relative">
                 {/* Main aerial shot */}
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                  <img
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
                     src="/gallery/christchurch-roof-paint-job1.jpg"
                     alt="Freshly painted dark grey corrugated iron roof by Garden City Painters Christchurch"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
+                    className="object-cover"
                   />
                 </div>
-                {/* Worker inset */}
+                {/* Second roof shot inset */}
                 <div className="absolute -bottom-4 -right-4 w-44 h-32 rounded-xl overflow-hidden shadow-xl border-2 border-white hidden md:block">
-                  <img
-                    src="/gallery/christchurch-roof-paint-job.jpg"
-                    alt="Freshly painted light grey corrugated iron roof by Garden City Painters Christchurch"
-                    width={352}
-                    height={256}
-                    className="w-full h-full object-cover"
-                  />
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/gallery/christchurch-roof-paint-job.jpg"
+                      alt="Freshly painted light grey corrugated iron roof by Garden City Painters Christchurch"
+                      fill
+                      sizes="176px"
+                      loading="lazy"
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl hidden md:block border border-charcoal/5">
                   <p className="text-charcoal font-heading font-bold text-2xl">15+ Years</p>

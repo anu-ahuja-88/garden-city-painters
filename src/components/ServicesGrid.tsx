@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 import { motion, useReducedMotion } from "framer-motion"
 import { Home, Building2, Layers, CloudSun, Paintbrush, HardHat, Hammer, Droplets } from "lucide-react"
 
@@ -78,10 +79,13 @@ export default function ServicesGrid() {
             >
               {/* Photo */}
               <div className="relative aspect-[4/3] overflow-hidden">
-                <img 
-                  src={s.photo} 
-                  alt={s.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                <Image
+                  src={s.photo}
+                  alt={`${s.title} — Garden City Painters Christchurch`}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  loading="lazy"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               {/* Content */}

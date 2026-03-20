@@ -10,8 +10,8 @@ const config: Config = {
         grey: "#F4F4F2",
       },
       fontFamily: {
-        heading: ["Plus Jakarta Sans", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        heading: ["var(--font-jakarta)", "sans-serif"],
+        body: ["var(--font-inter)", "sans-serif"],
       },
       maxWidth: { "8xl": "88rem" },
     },

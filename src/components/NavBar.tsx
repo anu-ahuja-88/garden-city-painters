@@ -38,9 +38,12 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 cursor-pointer">
-            <img 
-              src="/logo.png" 
-              alt="Garden City Painters Logo" 
+            <img
+              src="/logo.png"
+              alt="Garden City Painters Logo"
+              width={160}
+              height={48}
+              fetchPriority="high"
               className="h-12 w-auto object-contain"
             />
           </a>

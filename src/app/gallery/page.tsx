@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react"
+import Image from "next/image"
 import NavBar from "@/components/NavBar"
 import Footer from "@/components/Footer"
 import CtaBanner from "@/components/CtaBanner"
@@ -116,13 +117,14 @@ export default function GalleryPage() {
                   key={img.src}
                   className="group relative overflow-hidden rounded-xl bg-grey aspect-[4/3] border border-charcoal/5 shadow-sm"
                 >
-                  <img
+                  <Image
                     src={img.src}
                     alt={`${img.title} — Garden City Painters Christchurch`}
-                    width={800}
-                    height={600}
-                    loading={i < 6 ? "eager" : "lazy"}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    priority={i < 3}
+                    loading={i < 3 ? "eager" : "lazy"}
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-charcoal/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
                     <div>
