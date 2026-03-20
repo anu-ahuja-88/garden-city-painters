@@ -14,6 +14,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_NZ",
   },
+  icons: {
+    icon: [
+      { url: "/icon.png" },
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png" },
+    ],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
