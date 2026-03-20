@@ -20,6 +20,7 @@ const images: { title: string; category: Exclude<Category, "All">; src: string }
   { title: "Residential Exterior & Fencing", category: "Residential", src: "/gallery/residential-exterior-white-fence-grey-cladding-christchurch.png" },
 
   { title: "Feature Yellow Cladding Exterior", category: "Residential", src: "/gallery/residential-exterior-yellow-cladding-feature-christchurch.png" },
+  { title: "Garden City Painters Fleet on Site", category: "Residential", src: "/gallery/christchurch-painter-van.jpg" },
   { title: "Exterior Preparation Work", category: "Residential", src: "/gallery/residential-painter-exterior-prep-christchurch.png" },
   { title: "Exterior Surface Preparation", category: "Residential", src: "/gallery/exterior-preparation-painting-christchurch.png" },
 
@@ -46,6 +47,8 @@ const images: { title: string; category: Exclude<Category, "All">; src: string }
   { title: "Interior Work in Progress", category: "Interior", src: "/gallery/interior-house-painting-in-progress.png" },
 
   // ── Roof ──
+  { title: "Freshly Painted Grey Corrugated Roof", category: "Roof", src: "/gallery/christchurch-roof-paint-job.jpg" },
+  { title: "Dark Grey Roof Coating Christchurch", category: "Roof", src: "/gallery/christchurch-roof-paint-job1.jpg" },
   { title: "Aerial Corrugated Iron Roof Paint", category: "Roof", src: "/gallery/roof-painting-corrugated-iron-aerial-christchurch.jpg" },
   { title: "Roof Painting in Progress", category: "Roof", src: "/gallery/roof-painting-worker-corrugated-iron-christchurch.png" },
 ]

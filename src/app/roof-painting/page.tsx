@@ -56,8 +56,8 @@ export default function RoofPaintingPage() {
                 {/* Main aerial shot */}
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="/gallery/roof-painting-corrugated-iron-aerial-christchurch.jpg"
-                    alt="Aerial view of corrugated iron roof painting completed by Garden City Painters Christchurch"
+                    src="/gallery/christchurch-roof-paint-job1.jpg"
+                    alt="Freshly painted dark grey corrugated iron roof by Garden City Painters Christchurch"
                     width={800}
                     height={600}
                     className="w-full h-full object-cover"
@@ -66,8 +66,8 @@ export default function RoofPaintingPage() {
                 {/* Worker inset */}
                 <div className="absolute -bottom-4 -right-4 w-44 h-32 rounded-xl overflow-hidden shadow-xl border-2 border-white hidden md:block">
                   <img
-                    src="/gallery/roof-painting-worker-corrugated-iron-christchurch.png"
-                    alt="Garden City Painters roofer applying coating to corrugated iron Christchurch"
+                    src="/gallery/christchurch-roof-paint-job.jpg"
+                    alt="Freshly painted light grey corrugated iron roof by Garden City Painters Christchurch"
                     width={352}
                     height={256}
                     className="w-full h-full object-cover"

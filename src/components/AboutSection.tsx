@@ -57,8 +57,8 @@ export default function AboutSection() {
               {/* Main — branded van on residential job site */}
               <div className="bg-white/5 rounded-2xl aspect-[4/3] overflow-hidden border border-white/10 relative">
                 <img
-                  src="/gallery/garden-city-painters-van-residential-site-christchurch.png"
-                  alt="Garden City Painters branded van on residential job site Christchurch"
+                  src="/gallery/christchurch-painter-van.jpg"
+                  alt="Garden City Painters two branded vans on residential job site Christchurch"
                   width={800}
                   height={600}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
